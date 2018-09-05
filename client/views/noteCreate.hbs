@@ -1,0 +1,22 @@
+<div class="row-fluid">
+    <form action="/users/note/save" method="POST"
+        <h1>Create Note</h1>
+        <input type="hidden" name="_id" {{#if note}}
+                value="{{note._id}}"
+            {{/if}}    >
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Title</label>
+            <input name="title" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Note Title" 
+            {{#if note}}
+                value="{{note.title}}"
+            {{/if}}    
+            >
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Note </label>
+            <textarea name="body" class="form-control" id="exampleFormControlTextarea1" rows="3">{{#if note}}{{note.body}}{{/if}}</textarea> 
+            
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>

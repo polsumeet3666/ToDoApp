@@ -1,0 +1,28 @@
+<div class="row-fluid">
+    <nav class="navbar ">
+        <span class="navbar-brand mb-0 h1 text-color">Welcome {{user.firstname}} </span>
+        <span class="navbar-text text-color">
+
+        </span>
+        <span class="navbar-text">
+            <a class="btn btn-success" href="/users/note/create">Add Note</a>
+            <a class="btn btn-primary" href="/logout" role="button">Logout</a>
+        </span>
+
+    </nav>
+
+</div>
+
+<div class="row-fluid">
+    {{#each notes}}
+    <div class="card custom-card" style="width: 18rem;">
+
+        <div class="card-body">
+            <h5 class="card-title">{{title}}</h5>
+            <p class="card-text">{{body}}</p>
+            <a href="/users/note/edit/{{_id}}" class="alert alert-primary"><i class="fas fa-edit"></i></a>
+            <a href="/users/note/delete/{{_id}}" class="alert alert-danger"><i class="fas fa-trash-alt"></i></a>
+        </div>
+    </div>
+    {{/each}}
+</div>

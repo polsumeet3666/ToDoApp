@@ -1,0 +1,41 @@
+<div class="row">
+
+    <div class="col-md-6">
+        <h1>Sign up</h1>
+        {{#if userCreatedFail}}
+        <div class="alert alert-danger" role="alert">
+            User Creation Failed. Email already registred.
+        </div>
+        {{/if}}
+        <form method="POST" action="/users/create">
+            <div class="form-group">
+                <label for="firstname">Firstname</label>
+                <input name="firstname" type="text" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter name">
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputRePassword1">Re Password</label>
+                <input name="repassword" type="password" class="form-control" id="exampleInputRePassword1" placeholder="Re Password">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laudantium corporis quia nulla fugiat optio accusantium amet doloremque tenetur sequi quos ea exercitationem est eum modi, consequatur rem. Sequi, accusantium?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut libero repudiandae voluptatem fuga illum maiores ut fugiat. Pariatur sint autem et vel placeat, sequi aut, quod sapiente fugit, suscipit illo.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eligendi atque modi laboriosam ducimus quisquam quidem ad repudiandae culpa reiciendis dolorem tenetur eum corporis molestiae pariatur assumenda, beatae ipsam facilis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat error veritatis alias eaque cum modi tempora tempore accusamus in ut iure laboriosam corporis eum architecto, quisquam blanditiis quaerat odio dolorum?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione dolore reiciendis veritatis eum et sed cumque quas eaque pariatur iure. Mollitia, officia aliquid sint earum dicta odio dolore excepturi labore!Lorem</p>
+    </div>
+
+</div>

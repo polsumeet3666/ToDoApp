@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-md-6">
+        
+        <h1>Welcome </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptatem, accusantium ipsa aliquid modi ex
+            magni placeat at ducimus esse, eligendi nobis sit rem quibusdam! Totam qui harum nulla aliquid?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident eaque necessitatibus cum, sint vitae
+            enim beatae quae expedita fuga laboriosam consequuntur sapiente ipsum alias ratione! Accusantium reiciendis corporis
+            aliquam?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quibusdam explicabo quia, dolores necessitatibus
+            molestiae nam dicta nesciunt eligendi dolor omnis quaerat eius sequi qui temporibus alias quam accusantium ipsum!</p>
+    </div>
+    <div class="col-md-6">
+        <h1>Login</h1>
+
+        {{#if userCreatedSuccess}}
+        <div class="alert alert-success" role="alert">
+            User Created Successfully.
+        </div>
+        {{/if}} {{#if loginfailed}}
+        <div class="alert alert-danger" role="alert">
+            Incorrect Username/Password.
+        </div>
+        {{/if}} 
+
+
+        <form method="POST" action="/users/login">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="/signup" rel="noopener noreferrer"> Not Yet Member ? SignUp here</a>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+body {
+  padding: 50px;
+  color: #cae9ff;
+  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
+}
+
+a {
+  color: #cae9ff;
+}
+
+.text-muted {
+  color: #1c2935;
+}
+
+.custom-card {
+  float: left;
+  margin: 1em;
+}
+.custom-body {
+  background: #1b4965;
+  color: #cae9ff;
+}
+
+.btn-primary {
+  background-color: #353535
+}
+
+.navbar {
+  background-color: none;
+}
+
+.text-color {
+  color: #cae9ff;
+}
+.bg-light {
+	background-color:#1b4965;
+}
+.custom-card {
+	background: #ffc857;
+	color: #353535;
+}
+
+.card-title {
+	border-bottom: double 3px;
+	/* border: solid; */
+}
+.container-fluid {
+  margin-top: 15px;
+}
